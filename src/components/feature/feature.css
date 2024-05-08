@@ -1,0 +1,18 @@
+.feature {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 5rem;
+}
+
+.feature__image {
+    object-fit: contain;
+}
+
+@media screen and (max-width: 850px) {
+    .feature {
+        padding: 3rem;
+    }
+}

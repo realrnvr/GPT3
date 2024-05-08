@@ -1,0 +1,102 @@
+.gpt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8rem;
+    padding: 5rem 4rem;
+    margin: 0 5rem 5rem 5rem;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background: var(--color-footer);
+    background: -moz-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+    background: -webkit-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+    background: -o-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+    background: -ms-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+    background: radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+}
+
+.margin-default--top {
+    margin-top: 0;
+}
+
+.gpt__intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gpt__title {
+    font-family: var(--text-font);
+    font-size: 34px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+
+.gpt__text {
+    color: #FF8A71;
+    font-family: var(--text-font);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.1;
+    text-align: center;
+    margin-left: 1rem;
+}
+
+
+.gpt__footer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.gpt__footer .glimse {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4rem;
+}
+
+@media screen and (max-width: 850px) {
+    .gpt {
+        gap: 5rem;
+    }
+
+    .gpt__title {
+        font-size: 28px;
+    }
+
+    .gpt__text {
+        font-size: 12px;
+    }
+
+    .gpt__intro {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .gpt__footer {
+        flex-direction: column;
+    }
+
+    .gpt__footer .glimse {
+        gap: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .gpt {
+        padding: 2rem;
+    }
+
+    .gpt__title {
+        font-size: 24px;
+    }
+
+    .gpt__text {
+        font-size: 10px;
+    }
+}

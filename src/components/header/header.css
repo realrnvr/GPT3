@@ -1,0 +1,114 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.header__title {
+    font-family: var(--text-font);
+    margin-right: 2rem;
+    color: #fff;
+}
+
+.header__navbar {
+    display: flex;
+    gap: 1rem;
+    margin-right: auto;
+}
+
+.header__line {
+    display: none;
+    margin-left: 1rem;
+}
+
+.header__line svg {
+    cursor: pointer;
+}
+
+.header__pop-menu {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: var(--color-footer);
+    padding: 2rem 3rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    animation: scale-up-center .3s linear;
+}
+
+.header__pop-menu .option {
+    text-align: right;
+    padding: .5rem 0;
+}
+
+.header__pop-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: .5rem;
+    display: none;
+}
+
+.header__pop-btn button:first-child {
+    border: 1px solid #fff;
+}
+
+.scale-up-center {
+    animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .header__navbar {
+        display: none;
+    }
+
+    .header__title {
+        margin-right: auto;
+    }
+
+    .header__line {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .header__buttons {
+        display: none;
+    }
+
+    .header__pop-menu {
+        top: 40px;
+        right: 0;
+    }
+
+    .header__pop-btn {
+        display: flex;
+    }
+}

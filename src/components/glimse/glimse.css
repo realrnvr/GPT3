@@ -1,0 +1,68 @@
+.glimse {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.glimse__wrapper {
+    align-self: flex-start;
+    position: relative;
+}
+
+.glimse__line-gradient {
+    position: absolute;
+    left: 0;
+    top: -10px;
+    width: 38px;
+    height: 3px;
+    background: var(--gradient-bar);
+    border-radius: 5px;
+}
+
+.glimse__title {
+    /* flex: 1; */
+    font-family: var(--text-font);
+    color: #fff;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: -0.04rem;
+    margin-right: .5rem;
+}
+
+.glimse__text {
+    /* flex: .7; */
+    font-family: var(--text-font);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--color-text);
+    text-align: left;
+    max-width: 70ch;
+    width: 100%;
+}
+
+@media screen and (max-width: 850px) {
+    .glimse__title {
+        font-size: 20px;
+    }
+
+    .glimse__text {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .glimse {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .glimse__title {
+        font-size: 16px;
+    }
+
+    .glimse__text {
+        font-size: 12px;
+    }
+}

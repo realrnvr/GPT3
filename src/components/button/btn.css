@@ -1,0 +1,17 @@
+.btn {
+    font-family: var(--text-font);
+    background-color: #FF4820;
+    color: #fff;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 10px 25px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin: .2rem;
+    cursor: pointer;
+}
+
+.btn--transparent {
+    background-color: transparent;
+}

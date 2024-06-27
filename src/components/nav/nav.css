@@ -1,7 +1,6 @@
 .nav {
     display: flex;
     justify-content: center;
-    height: 100%;
 }
 
 .nav__content {
@@ -10,7 +9,7 @@
     align-items: flex-start;
     gap: 1.5rem;
     flex: 1;
-    margin-top: 5rem;
+    margin-top: 4rem;
 }
 
 .nav__title {
@@ -73,18 +72,9 @@
     gap: .7rem;
 }
 
-
 .nav__image {
     flex: .7;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.nav__ai-image {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
+    margin-top: 4rem;
 }
 
 @media screen and (max-width: 1360px) {

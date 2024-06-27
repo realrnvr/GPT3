@@ -22,11 +22,31 @@
 * {
     margin: 0;
     padding: 0;
+    line-height: calc(1em + 0.5rem);
+}
+
+html {
     scroll-behavior: smooth;
 }
 
 body {
     background-color: var(--color-bg);
+    font-family: var(--text-font);
+}
+
+html,
+body {
+    height: 100%;
+}
+
+
+img,
+svg,
+picture,
+canvas,
+video {
+    display: block;
+    max-width: 100%;
 }
 
 a {
@@ -34,6 +54,7 @@ a {
     color: #fff;
 }
 
+/* Utils */
 .text-gradient {
     background: var(--gradient-text);
     background-clip: text;
